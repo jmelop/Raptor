@@ -1,9 +1,11 @@
 import React from 'react';
 import '../../App.css'
+import MainSection from '../MainSection';
 
-function Shop () {
+function Shop() {
     return (
         <>
+        <MainSection />
         </>
     );
 }

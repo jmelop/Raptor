@@ -5,6 +5,7 @@ import Shop from './components/pages/Shop';
 import Products from './components/pages/Products';
 import Projects from './components/pages/Projects';
 import AboutUs from './components/pages/AboutUs';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,14 +13,15 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' exact component={Shop} />
-          <Route path='/products' component={Products} />
-          <Route path='/projects' component={Projects} />
-          <Route path='/about-us' component={AboutUs} />
+          <Route path='/' element={<Shop />} />
+          <Route path='/products' element={<Products />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/about-us' element={<AboutUs />} />
         </Routes>
+        <Footer />
       </Router>
     </>
-  )
+  );
 }
 
 export default App;
