@@ -6,6 +6,8 @@ import Products from './components/pages/Products';
 import Projects from './components/pages/Projects';
 import AboutUs from './components/pages/AboutUs';
 import Footer from './components/Footer';
+import Credits from './components/pages/Credits';
+import SignIn from './components/pages/SignIn';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path='/products' element={<Products />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/about-us' element={<AboutUs />} />
+          <Route path='/login' element={<SignIn />} />
+          <Route path='/credits' element={<Credits />} />
         </Routes>
         <Footer />
       </Router>

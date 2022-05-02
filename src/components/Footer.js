@@ -118,17 +118,17 @@ function Footer() {
                         <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
                             Products
                         </h6>
-                        <Link className="mb-4" to='/'>Raptor - v1</Link>
-                        <Link className="mb-4" to='/'>Raptor - v2</Link>
-                        <Link className="mb-4" to='/'>RedRaptor</Link>
+                        <Link className="mb-4" to='/products'>Raptor - v1</Link>
+                        <Link className="mb-4" to='/products'>Raptor - v2</Link>
+                        <Link className="mb-4" to='/products'>RedRaptor</Link>
                     </div>
                     <div className="text-gray-600 flex flex-col">
                         <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start mb-4">
                             Useful links
                         </h6>
-                        <Link className="mb-4" to='/'>Products</Link>
-                        <Link className="mb-4" to='/'>Projects</Link>
-                        <Link className="mb-4" to='/'>About Us</Link>
+                        <Link className="mb-4" to='/products'>Products</Link>
+                        <Link className="mb-4" to='/projects'>Projects</Link>
+                        <Link className="mb-4" to='/about-us'>About Us</Link>
                     </div>
                     <div className="">
                         <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">

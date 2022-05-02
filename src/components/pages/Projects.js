@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css'
 
-function Projects () {
+function Projects() {
     return (
         <>
         </>

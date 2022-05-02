@@ -4,6 +4,7 @@ import '../../App.css'
 function AboutUs () {
     return (
         <>
+        
         </>
     );
 }

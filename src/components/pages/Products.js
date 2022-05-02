@@ -1,9 +1,11 @@
 import React from 'react';
 import '../../App.css'
+import Cards from '../Cards';
 
-function Products () {
+function Products() {
     return (
         <>
+            <Cards />
         </>
     );
 }
