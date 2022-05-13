@@ -3,9 +3,11 @@ import React from "react";
 function CardItem(props) {
     return (
         <>
-            <div className="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <img className="p-8 rounded-t-lg h-80" src={props.src} alt="dron" />
-                <div className="px-5 pb-5">
+            <div className="relative w-full bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mb-2">
+                <div className="aspect-h-4 aspect-w-3">
+                    <img className="rounded object-cover w-full h-80 m-auto" src={props.src} alt="dron" />
+                </div>
+                <div className="px-5 pb-5 mt-2">
                     <a href="/">
                         <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{props.dron}</h5>
                     </a>
