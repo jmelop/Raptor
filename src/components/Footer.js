@@ -4,9 +4,9 @@ import './Footer.css'
 
 function Footer() {
     return (
-        <footer className='mt-10 bg-slate-800'>
-            <div className='border-b border-gray-700'>
-                <div className='py-6 flex items-center justify-center'>
+        <footer className='mt-10 bg-slate-800 relative mx-12vw'>
+            <div className='flex border-b border-gray-700 items-center justify-center inline-block'>
+                <div className='py-6 inline-flex'>
                     <a href='/'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" className="bi bi-facebook" viewBox="0 0 16 16">
                             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
@@ -24,52 +24,50 @@ function Footer() {
                     </a>
                 </div>
             </div>
-            <div className='flex flex-col text-center mx-10'>
-                <div className='inline-grid grid-cols-4 gap-4 mt-16 mb-24'>
-                    <div>
-                        <p className='text-gray-100 font-bold underline'>General</p>
-                        <div className='text-gray-100 font-medium'>
-                            <Link className='mt-5 flex items-center justify-center' to='/products'>Privacy policy</Link>
-                            <Link className='mt-3 flex items-center justify-center' to='/products'>Terms of use</Link>
-                            <Link className='mt-3 flex items-center justify-center' to='/products'>Our Mission</Link>
-                        </div>
+            <div className='relative grid mx-auto max-w-7xl grid-cols-4 grid-rows-max-content md:grid-cols-7 xl:grid-cols-12'>
+                <div className='col-span-full my-10 md:col-span-3 xl:row-span-2 text-center'>
+                    <p className='text-gray-100 font-bold underline'>General</p>
+                    <div className='text-gray-100 font-medium'>
+                        <Link className='mt-5 flex items-center justify-center' to='/products'>Privacy policy</Link>
+                        <Link className='mt-3 flex items-center justify-center' to='/products'>Terms of use</Link>
+                        <Link className='mt-3 flex items-center justify-center' to='/products'>Our Mission</Link>
                     </div>
-                    <div className=''>
-                        <p className='text-gray-100 font-bold underline'>Products</p>
-                        <div className='text-gray-100 font-medium'>
-                            <Link className='mt-5 flex items-center justify-center' to='/products'>Raptor - v1</Link>
-                            <Link className='mt-3 flex items-center justify-center' to='/products'>Raptor - v2</Link>
-                        </div>
+                </div>
+                <div className='col-span-full my-10 md:col-span-3 xl:row-span-2 text-center'>
+                    <p className='text-gray-100 font-bold underline'>Products</p>
+                    <div className='text-gray-100 font-medium'>
+                        <Link className='mt-5 flex items-center justify-center' to='/products'>Raptor - v1</Link>
+                        <Link className='mt-3 flex items-center justify-center' to='/products'>Raptor - v2</Link>
                     </div>
-                    <div className=''>
-                        <p className='text-gray-100 font-bold underline'>Stay up to date</p>
-                        <div className='text-gray-100 font-medium'>
-                            <Link className='mt-5 flex items-center justify-center' to='/products'>Subscribe to the newsletter</Link>
-                            <Link className='mt-3 flex items-center justify-center' to='/products'>Discord</Link>
-                        </div>
+                </div>
+                <div className='col-span-full my-10 md:col-span-3 xl:row-span-2 text-center'>
+                    <p className='text-gray-100 font-bold underline'>Stay up to date</p>
+                    <div className='text-gray-100 font-medium'>
+                        <Link className='mt-5 flex items-center justify-center' to='/products'>Subscribe to the newsletter</Link>
+                        <Link className='mt-3 flex items-center justify-center' to='/products'>Discord</Link>
                     </div>
-                    <div>
-                        <p className='text-gray-100 font-bold underline'>Contact</p>
-                        <div className='text-gray-100 font-medium'>
-                            <p className='mt-5 flex items-center justify-center'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-telephone-fill" viewBox="0 0 16 16">
-                                    <path fillRule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                                </svg>
-                                <span className='ml-4'>+ 01 234  567 89</span>
-                            </p>
-                            <p className='mt-3 flex items-center justify-center'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope-open-fill" viewBox="0 0 16 16">
-                                    <path d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765l-6-3.2ZM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM0 13.373l5.693-3.163L0 6.873v6.5Z" />
-                                </svg>
-                                <span className='ml-4'>info@example.com</span>
-                            </p>
-                            <p className='mt-3 flex items-center justify-center'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-calendar-event-fill" viewBox="0 0 16 16">
-                                    <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
-                                </svg>
-                                <span className='ml-4'>Office hours</span>
-                            </p>
-                        </div>
+                </div>
+                <div className='col-span-full my-10 md:col-span-3 xl:row-span-2 text-center'>
+                    <p className='text-gray-100 font-bold underline'>Contact</p>
+                    <div className='text-gray-100 font-medium'>
+                        <p className='mt-5 flex items-center justify-center'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fillRule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                            <span className='ml-4'>+ 01 234  567 89</span>
+                        </p>
+                        <p className='mt-3 flex items-center justify-center'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope-open-fill" viewBox="0 0 16 16">
+                                <path d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765l-6-3.2ZM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM0 13.373l5.693-3.163L0 6.873v6.5Z" />
+                            </svg>
+                            <span className='ml-4'>info@example.com</span>
+                        </p>
+                        <p className='mt-3 flex items-center justify-center'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-calendar-event-fill" viewBox="0 0 16 16">
+                                <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                            </svg>
+                            <span className='ml-4'>Office hours</span>
+                        </p>
                     </div>
                 </div>
             </div>
