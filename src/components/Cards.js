@@ -35,6 +35,33 @@ function Cards() {
                                 price='$799'
                             />
                         </div>
+                        <div>
+                            <CardItem
+                                src='images/MVC terra.jpg'
+                                dron='MVC Terra'
+                                stars='3'
+                                description='Vestibulum lacinia eros sit amet massa sollicitudin auctor.'
+                                price='$899'
+                            />
+                        </div>
+                        <div>
+                            <CardItem
+                                src='images/MVC 2.jpg'
+                                dron='MVC Solar 2.v'
+                                stars='4.5'
+                                description='Nullam a fringilla enim, vitae iaculis justo. Mauris sollicitudin feugiat mi ut scelerisque.'
+                                price='$1099'
+                            />
+                        </div>
+                        <div>
+                            <CardItem
+                                src='images/MVC Super.jpg'
+                                dron='MVC Super'
+                                stars='5'
+                                description='Donec placerat elit sit amet eros tempus, quis suscipit est blandit.'
+                                price='$1299'
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
