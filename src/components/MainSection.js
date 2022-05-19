@@ -65,7 +65,7 @@ function MainSection() {
                         <div class='border-t border-gray-200'></div>
                     </div>
                 </div>
-                <div className='relative max-w-7xl mx-auto mt-28 mb-16 bg-slate-800 rounded-md'>
+                <div className='relative max-w-7xl mx-auto mt-28 mb-16 bg-slate-800 rounded-md shadow-lg shadow-gray-600'>
                     <div className='grid grid-cols-1 mt-10 gap-x-4 md:grid-cols-1 lg:grid-cols-2 px-4'>
                         <div className='bg-slate-800 p-10 rounded-md'>
                             <h1 className='text-5xl font-bold mb-2 text-white'>Find out about our</h1>
