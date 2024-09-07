@@ -60,9 +60,9 @@ function MainSection() {
                         </div>
                     </div>
                 </div>
-                <div class='hidden sm:block' aria-hidden='true'>
-                    <div class='py-5 mx-64'>
-                        <div class='border-t border-gray-200'></div>
+                <div className='hidden sm:block' aria-hidden='true'>
+                    <div className='py-5 mx-64'>
+                        <div className='border-t border-gray-200'></div>
                     </div>
                 </div>
                 <div className='relative max-w-7xl mx-auto mt-28 mb-16 bg-slate-800 rounded-md shadow-lg shadow-gray-600'>
@@ -130,7 +130,7 @@ function MainSection() {
                                 sollicitudin facilisis magna. Nam euismod mattis leo at posuere. Phasellus sit amet
                                 dictum libero, sed sodales mauris. Nam tortor orci, blandit a justo quis, tincidunt tempor
                                 ligula. Phasellus tempus nunc quis porta cursus.</p>
-                            <ul class='list-disc text-gray-400 font-medium mt-4 ml-4'>
+                            <ul className='list-disc text-gray-400 font-medium mt-4 ml-4'>
                                 <li>Nulla lacinia dui ullamcorper varius ullamcorper</li>
                                 <li>Morbi eu eleifend tellus</li>
                                 <li>Sed consectetur rhoncus tempus. Vestibulum vitae dictum ipsum</li>

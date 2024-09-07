@@ -1,4 +1,4 @@
-import { LockClosedIcon } from '@heroicons/react/solid'
+import { LockClosedIcon } from '@heroicons/react/24/solid';
 import React from "react";
 import '../App.css';
 import './Login.css';

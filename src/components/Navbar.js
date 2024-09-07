@@ -1,7 +1,7 @@
 import './Navbar.css';
 import { Fragment, useState } from 'react'
-import { Dialog, Popover, Transition } from '@headlessui/react'
-import { MenuIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/react/outline'
+import { Dialog, DialogPanel, Popover, Transition, TransitionChild } from '@headlessui/react'
+import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = {
     pages: [
@@ -12,14 +12,14 @@ const navigation = {
     ],
 }
 
-function Navbar() {
+export const Navbar = () => {
     const [open, setOpen] = useState(false)
     return (
         <div className="bg-white">
             {/* Mobile menu */}
-            <Transition.Root show={open} as={Fragment}>
+            <Transition show={open} as={Fragment}>
                 <Dialog as="div" className="fixed inset-0 flex z-40 lg:hidden" onClose={setOpen}>
-                    <Transition.Child
+                    <TransitionChild
                         as={Fragment}
                         enter="transition-opacity ease-linear duration-300"
                         enterFrom="opacity-0"
@@ -27,9 +27,9 @@ function Navbar() {
                         leave="transition-opacity ease-linear duration-300"
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0">
-                        <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-25" />
-                    </Transition.Child>
-                    <Transition.Child
+                        <DialogPanel className="fixed inset-0 bg-black bg-opacity-25" />
+                    </TransitionChild>
+                    <TransitionChild
                         as={Fragment}
                         enter="transition ease-in-out duration-300 transform"
                         enterFrom="-translate-x-full"
@@ -44,7 +44,7 @@ function Navbar() {
                                     className="-m-2 p-2 rounded-md inline-flex items-center justify-center text-gray-400"
                                     onClick={() => setOpen(false)}>
                                     <span className="sr-only">Close menu</span>
-                                    <XIcon className="h-6 w-6" aria-hidden="true" />
+                                    <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                                 </button>
                             </div>
                             <div className="border-t border-gray-200 py-6 px-4 space-y-6">
@@ -79,9 +79,9 @@ function Navbar() {
                                 </a>
                             </div>
                         </div>
-                    </Transition.Child>
+                    </TransitionChild>
                 </Dialog>
-            </Transition.Root>
+            </Transition>
             <header className="relative bg-white">
                 <p className="bg-indigo-600 h-10 flex items-center justify-center text-sm font-medium text-white px-4 sm:px-6 lg:px-8">
                     Get free delivery on orders over $100
@@ -93,7 +93,7 @@ function Navbar() {
                             className="bg-white p-2 rounded-md text-gray-400 lg:hidden"
                             onClick={() => setOpen(true)}>
                             <span className="sr-only">Open menu</span>
-                            <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                         </button>
                         <div className='relative w-full'>
                             <div className='grid grid-cols-1 mt-10 gap-x-4 md:grid-cols-1 lg:grid-cols-3 px-4'>
@@ -138,7 +138,7 @@ function Navbar() {
                                     <div className="hidden lg:ml-6 lg:flex">
                                         <a href="/" className="p-2 text-gray-400 hover:text-gray-500">
                                             <span className="sr-only">Search</span>
-                                            <SearchIcon className="w-6 h-6" aria-hidden="true" />
+                                            <MagnifyingGlassIcon className="w-6 h-6" aria-hidden="true" />
                                         </a>
                                     </div>
                                     <div className="hidden lg:ml-4 lg:flex">
